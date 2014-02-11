@@ -1,0 +1,8 @@
+##gff out for GeneMark.hmm PROKARYOTIC
+##gff-version 3
+id1	GeneMark	gene	2	3	.	+	.	ID=1
+id1	GeneMark	gene	75	100	.	+	.	ID=1
+id1	GeneMark	gene	240	250	.	+	.	ID=2
+id1	GeneMark	gene	1000	1200	.	+	.	ID=3
+id1	GeneMark	gene	1100	1200	.	+	.	ID=4
+id1	GeneMark	gene	1000	1300	.	-	.	ID=5

@@ -1,0 +1,21 @@
+##gff out for GeneMark.hmm PROKARYOTIC
+##gff-version 3
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	2	61	.	+	.	ID=1
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	62	1258	.	+	.	ID=2
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	1446	2465	.	-	.	ID=3
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	2477	3724	.	-	.	ID=4
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	3897	4223	.	-	.	ID=5
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	4358	4699	.	+	.	ID=6
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	4734	5294	.	+	.	ID=7
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	5297	6043	.	-	.	ID=8
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	6112	6420	.	+	.	ID=9
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	6619	9045	.	+	.	ID=10
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	9103	11529	.	+	.	ID=11
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	11540	12157	.	+	.	ID=12
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	12159	13013	.	+	.	ID=13
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	13047	13670	.	+	.	ID=14
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	13829	15121	.	+	.	ID=15
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	15317	15484	.	+	.	ID=16
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	15894	17114	.	-	.	ID=17
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	17249	18142	.	-	.	ID=18
+contig-100_2_length_414208_read_count_105342	GeneMark	gene	18249	19502	.	+	.	ID=19
