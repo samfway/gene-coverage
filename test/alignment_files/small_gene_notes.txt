@@ -1,0 +1,35 @@
+# Notes about the test set small_*
+# small_contig.coords contains several, hand-crafted contig alignments
+# small_contig_genes.gff contains several, hand-crafted contig annotations
+
+# Notes for the genes in small_contig_genes.gff: 
+ID=1 :  Exact match. 
+     :  Start is at 20000
+     :  Length is 500bp (20000, 20499) 
+    
+ID=2 :  Exact match.  Minus strand (500bp)
+     :  Start is at 20000
+     :  Length is 500bp (20000, 20499) 
+
+ID=3 :  Gene is shorter than contig by 100bp.  (400bp)
+     :  Start is at 20000
+     :  Length is 400bp (20000, 20399)
+
+ID=4 :  Gene starts near the end of the alignment, at 501.
+     :  Overlap is then between 501 and 600
+     :  Start is at 20400
+     :  Length is 100bp (20400, 20499)  
+
+ID=5 :  Gene starts before the alignment.
+     :  Overlap is between 101 and 200
+     :  Length is 100bp (20000, 20099) 
+
+ID=6 :  Gene is larger than the alignment. 
+     :  Overlap is just the contig boundary 
+     :  Length is 500bp (20000, 20499)
+
+ID=7 :  Gene is in the middle of the alignment.
+     :  Overlap is just the gene boundary (100bp)
+     :  Length is 100bp (20100, 20199)
+
+ID=8 :  No overlap.  Not in the ouptut file 

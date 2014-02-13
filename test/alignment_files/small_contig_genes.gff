@@ -1,0 +1,10 @@
+##gff out for GeneMark.hmm PROKARYOTIC
+##gff-version 3
+contig-1	GeneMark	gene	1	500	.	+	.	ID=1
+contig-1	GeneMark	gene	1	500	.	-	.	ID=2
+contig-1	GeneMark	gene	1	400	.	+	.	ID=3
+contig-2	GeneMark	gene	501	700	.	+	.	ID=4
+contig-2	GeneMark	gene	1	200	.	+	.	ID=5
+contig-2	GeneMark	gene	1	700	.	+	.	ID=6
+contig-2	GeneMark	gene	201	300	.	+	.	ID=7
+contig-3	GeneMark	gene	201	300	.	+	.	ID=8

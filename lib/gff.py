@@ -15,7 +15,7 @@ class gff_entry:
         self.valid = False
         x = gffLine.strip().split('\t')
         try:
-            self.seqid = x[0]
+            self.seq_id = x[0]
             self.source = x[1]
             self.type = x[2]
             self.start = int(x[3])

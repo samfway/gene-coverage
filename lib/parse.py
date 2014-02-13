@@ -14,7 +14,7 @@ from cogent.parse.genbank import RichGenbankParser
 
 class feature_location(object):
     """ Generic location information for sequence features """ 
-    def __init__(self, start, end, strand):
+    def __init__(self, start, end, strand, seq_id, other_location=None):
         if isinstance(strand, basestring):
             if strand == '-':
                 strand = -1
@@ -23,6 +23,7 @@ class feature_location(object):
         self.start = start
         self.end = end 
         self.strand = strand
+        self.seq_id = seq_id
 
 def get_feature_locations_from_genbank(genbank_file, feature_type='gene'):
     """ Parse specified entries from a genbank file """ 
@@ -30,18 +31,20 @@ def get_feature_locations_from_genbank(genbank_file, feature_type='gene'):
     for accession, seq in parser:
         for feature in seq.Info.features:
             if feature['type'] == feature_type:
-                yield feature_location( feature['location'].first(), \
-                                        feature['location'].last(), \
-                                        feature['location'].strand() )
+                yield feature_location( feature['location'].first(),  \
+                                        feature['location'].last(),   \
+                                        feature['location'].strand(), \
+                                        seq.Name )
 
 def get_feature_locations_from_gff3(gff3_file):
     """ Parse location information from gff3 file """ 
     for line in open(gff3_file, 'rU'):
         entry = gff_entry(line)
         if entry.valid:
-            yield feature_location(entry.start, \
-                                   entry.end,   \
-                                   entry.strand)
+            yield feature_location(entry.start,  \
+                                   entry.end,    \
+                                   entry.strand, \
+                                   entry.seq_id)
 
 def get_feature_locations(input_file):
     """ Parse location information from gff3 or genbank file """ 
