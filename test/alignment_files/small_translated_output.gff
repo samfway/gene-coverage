@@ -1,0 +1,9 @@
+##gff out for translated genes
+##gff-version 3
+reference_genome	translated	gene	20000	20499	.	+	.	id_0
+reference_genome	translated	gene	20000	20499	.	-	.	id_1
+reference_genome	translated	gene	20000	20399	.	+	.	id_2
+reference_genome	translated	gene	20400	20499	.	+	.	id_3
+reference_genome	translated	gene	20000	20099	.	+	.	id_4
+reference_genome	translated	gene	20000	20499	.	+	.	id_5
+reference_genome	translated	gene	20100	20199	.	+	.	id_6
