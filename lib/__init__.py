@@ -9,5 +9,5 @@ __maintainer__ = "Sam Way"
 __email__ = "samfway@gmail.com"
 __status__ = "Development"
 
-__all__ = ['parse']
+__all__ = ['parse', 'gff', 'nucmer', 'overlap', 'util']
 
