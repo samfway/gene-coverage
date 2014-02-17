@@ -80,10 +80,10 @@ def parse_nucmer_coords_file(coords_file):
     headers = re.findall('\[([^\]]+)\]' , first_line) # Match things between square brackets
     if 'S1' not in headers or 'E2' not in headers: 
         raise ValueError('File (%s) does not appear to be a valid nucmer coords file. ' + \
-                         'First line should contain fields like [S1] and [E2]' % coords_file)
+                         'First line should contain fields like [S1] and [E2]' % (coords_file))
     if 'TAGS' != headers[-1]:
         raise ValueError('File (%s) does not appear to be a valid nucmer coords file. ' + \
-                         'Last field should be [TAGS]' % coords_file)
+                         'Last field should be [TAGS]' % (coords_file))
 
     for line in input_file:
         nucmer_aln = parse_nucmer_line(line, headers)
